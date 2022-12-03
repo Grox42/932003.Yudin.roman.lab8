@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Task_8</title>
+		<script type="text/javascript" src="scripts.js"></script>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-family: arial;
+			}
+			.row {
+				height: 20px;
+			}
+			input {
+				border: 1px solid gray;
+				float: left;
+				min-width: 20px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div style="display: none;">
+			<div class="row" >
+				<input class="inputFirst" type="text">
+				<input class="inputSecond" text="text">
+				<input type="button" onclick="Up(this);" value="↑">
+				<input type="button" onclick="Down(this);" value="↓">
+				<input type="button" onclick="DelRow(this);" value="x">
+			</div>
+		</div>
+	
+		<div id="list">
+		</div>
+	
+		<input type="button" onclick="AddRow();" value="Добавить элемент">
+		<br>
+		<input type="button" onclick="Save();" value="Сохранить" style="float: none;">
+		
+		<div id="output">
+		</div>
+	</body>
+</html>
